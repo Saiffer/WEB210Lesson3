@@ -3,52 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>David Aznaurov | Resume</title>
 </head>
 <body>
     <!-- // Intro -->
     <header>
-        <img class="my_photo" src="images/my_photo.jpg" alt="Your Name">
-        <h1>David Aznaurov</h1>
-        <h2>Full-Stack Developer</h2>
-        <p>Former Electrical Engineer with more than 5 years of expierence. At this moment changing career to become Proficient in Web Development</p>
+        <div class="header_content">
+            <img class="my_photo" src="images/my_photo.jpg" alt="Your Name">
+                <div class="header_intro-text">
+                    <h1 class="main_heading">David Aznaurov</h1>
+                    <h2 class="main_heading">Full-Stack Developer</h2>
+                    <p>Former Electrical Engineer with more than 5 years of expierence. At this moment changing career to become Proficient in Web Development</p>
+                </div>
+        </div>
     </header>
     
     <main> 
         <!-- // Work Experience -->
         <section>
             <h2>Work Experience</h2>
+        <div class="card_container">
+            <!-- Job Details: copy this whole block to add more jobs -->
+            <div class="card">  
+                <div class="internal_container"> 
+                    <h3>Papa John's</h3>
+                    <p class="title">Driver</p>
+                    <p>Starting date: October 21 2019</p>
+                <!-- Add as many paragraphs as you need. -->
+                    <p>Providing excelent customer service</p>
+                    <p>Delivering orders to customers</p>
+                    <div class="card_footer"><a href="https://www.papajohns.com/">Contact Employer</a></div>
+                </div>  
+            </div>
 
             <!-- Job Details: copy this whole block to add more jobs -->
-            <h3>Driver</h3>
-            <p>Papa John's</p>
-            <p>Starting date: October 21 2019</p>
-            
+            <div class="card"> 
+                <div class="internal_container"> 
+                    <h3>Tbilisi Transport Company</h3>
+                    <p class="title">Electrical Engineer</p>
+                    <p>Starting date: September 17 2011</p>
+                    <p>End date: May 25 2017</p>
             <!-- Add as many paragraphs as you need. -->
-            <p>Providing excelent customer service</p>
-            <p>Delivering orders to customers</p>
-
-            <!-- Job Details: copy this whole block to add more jobs -->
-            <h3>Electrical Engineer</h3>
-            <p>Tbilisi Transport Company</p>
-            <p>Starting date: September 17 2011</p>
-            <p>End date: May 25 2017</p>
-            
+                    <p>Providing maintenance for existing high voltage electrical equipment.</p> 
+                    <p>Writing schemes for new and modernizing equipment.</p>   
+                    <p>Providing training to new engineers with modern equipment.</p>
+                    <div class="card_footer"><a href="http://ttc.com.ge/">Contact Employer</a> </div>
+                </div>   
+            </div>
             <!-- Add as many paragraphs as you need. -->
-            <p>Providing maintenance for existing high voltage electrical equipment.</p> 
-            <p>Writing schemes for new and modernizing equipment.</p>   
-            <p>Providing training to new engineers with modern equipment.</p>
-            
+        </div>
             <!-- This list can be deleted if you don't want to use it. -->
-            <p>Optional list:</p>
+            <p>Achievements: </p>
             <ul>
                 <li>Created three new electrical defence systems with coleagues implemented automation of existing electrical systems.</li>
                 <li>Lead training new coleagues with understanding of modern computerized electrical equipment.</li>
                 <li>Responsible for modernization of 1960 year equpment to modern eurean standarts.</li>
             </ul>
             <!-- end of Job Details block. -->
-            
+        
         </section>
 
 
