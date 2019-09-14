@@ -22,24 +22,82 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  width: 100%;
+}
+
 .header_content {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f3;
+  width: 60%;
+}
+
+.my_photo {
+  margin-left: 100px;
+  width: 25%;
 }
 
 .header_intro-text {
   color: #304153;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .header_intro-text p {
-  padding-top: 2%;
-  line-height: 250%;
-  width: 50%;
+  margin-top: 15px;
+  line-height: 40px;
+  width: 60%;
+}
+
+/* Navigation styles */
+
+nav ul {
+  list-style: none;
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 60px auto;
+  background-color: #304153;
+  
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+span {
+  border-left: 1px solid #ffffff;
+}
+
+ul li ul {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul li:hover ul {
+  visibility: visible;
+}
+
+ul li ul li {
+  display: block;
+  color: #ffffff;
+  background-color: #304153;
+}
+
+ul  li:hover {
+  background-color: #1e1e1f;
 }
 
 .card {
@@ -63,6 +121,42 @@ body {
 .card_footer {
   position: absolute;
   bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.para {
+  position: relative;
+  background-color: #304153;
+  width: 150px;
+  height: 40px;
+  transform: skew(-20deg);
+  margin: 30px auto;
+}
+
+.para p {
+  font-family: 'Russo One', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: #ffffff;
+  text-align: center;
+  display:
+}
+
+.aboutme-container {
+  margin: 30px auto;
+}
+
+.info-container {
+  width: 40%;
+  margin: 90px auto;
+  border-top: 2px solid #2a9aca;
+  border-bottom: 2px solid #2a9aca;
 }
 
 /*  TEXT STYLES  */
