@@ -56,6 +56,8 @@ header {
   width: 60%;
 }
 
+
+
 /* Navigation styles */
 
 nav ul {
@@ -100,35 +102,17 @@ ul  li:hover {
   background-color: #1e1e1f;
 }
 
-.card {
-  border: 1px solid #304153;
-  width: 20%;
-  margin: 0 auto; 
-}
+/* Content styles */
 
-.internal_container {
-  padding: 25px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.card_container {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.card_footer {
-  position: absolute;
-  bottom: 10px;
-}
 
 .container {
   display: flex;
   justify-content: space-between;
+  margin: 0 20%;
 }
 
-.para {
+
+.para1, .para2 {
   position: relative;
   background-color: #304153;
   width: 150px;
@@ -137,7 +121,11 @@ ul  li:hover {
   margin: 30px auto;
 }
 
-.para p {
+.para2 {
+  margin-left: 10px;
+}
+
+.para1 p, .para2 p {
   font-family: 'Russo One', sans-serif;
   font-size: 18px;
   position: absolute;
@@ -145,18 +133,71 @@ ul  li:hover {
   left: 20%;
   color: #ffffff;
   text-align: center;
-  display:
+}
+
+.para1 ~ p {
+  padding: 5px;
 }
 
 .aboutme-container {
-  margin: 30px auto;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.aboutme-container a {
+  padding: 5px;
 }
 
 .info-container {
   width: 40%;
-  margin: 90px auto;
+  margin: 90px 0;
   border-top: 2px solid #2a9aca;
   border-bottom: 2px solid #2a9aca;
+}
+
+.edu-work {
+  background-color: #304153;
+  color: #ffffff;
+}
+
+.job-edu-block {
+  margin-left: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.job-edu-block a {
+  background-color: #3799db;
+  padding: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.job-edu-block p {
+  line-height: 2em;
+}
+
+hr {
+  height: 2px;
+  background: #3799db;
+  border: none;
+  width: 50%;
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+footer {
+  text-align: right;
+  height: 30px;
+  background-color: #b9c0be;
+}
+
+footer p {
+  padding-right: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Russo One', sans-serif;
 }
 
 /*  TEXT STYLES  */
@@ -173,8 +214,12 @@ h1 {
 }
 
 section h2 {
-  text-align: center;
-  margin: 25px;
+  margin: 25px 25px 25px 300px;
+  display: inline-block;
+  background-color: #3799db;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Russo One', sans-serif;
 }
 
 .achievements {
@@ -182,5 +227,19 @@ section h2 {
   font-size: 2em;
   padding: 25px;
   text-align: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+.achievements ~ p {
+  text-align: center;
+  line-height: 2em;
+}
+
+ol {
+  padding: 20px;
+}
+
+ol li {
+  line-height: 2em;
 }
 
