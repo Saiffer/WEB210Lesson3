@@ -22,11 +22,13 @@ body {
   background-color: #FFFFFF;
   font-family: 'Lato', sans-serif;
   overflow-x:hidden;
+  margin: 0 auto;
 }
 
 header {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #f3f3f3;
   width: 100%;
@@ -36,6 +38,7 @@ header {
   margin: 0 auto;
   background-color: #f3f3f3;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -78,14 +81,14 @@ span {
 }
 
 ul li ul {
-  visibility: hidden;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 ul li:hover ul {
-  visibility: visible;
+  display: inline;
   z-index: 10;
 }
 
@@ -104,6 +107,7 @@ ul  li:hover {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 20%;
 }
