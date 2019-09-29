@@ -32,22 +32,16 @@ header {
 
 .header_content {
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   background-color: #f3f3f3;
-  width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.my_photo {
-  margin-left: 100px;
-  width: 25%;
-}
 
 .header_intro-text {
   color: #304153;
   margin-top: 30px;
   margin-bottom: 30px;
-  display: inline-block;
 }
 
 .header_intro-text p {
@@ -65,7 +59,7 @@ nav ul {
   font-family: 'Russo One', sans-serif;
   color: #fff;
   text-align: center;
-  margin: 60px auto;
+  margin-top: 60px;
   background-color: #304153;
   
 }
@@ -90,6 +84,7 @@ ul li ul {
 
 ul li:hover ul {
   visibility: visible;
+  z-index: 10;
 }
 
 ul li ul li {
@@ -142,6 +137,7 @@ ul  li:hover {
 .aboutme-container {
   margin: 30px 0;
   text-align: center;
+  z-index: -1;
 }
 
 .aboutme-container a {
@@ -243,3 +239,89 @@ ol li {
   line-height: 2em;
 }
 
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    display: block;
+    margin: 0 auto;
+  }
+  .header_content {
+    display: block;
+    text-align: center;
+  }
+  .info-container {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid #2a9aca;
+    border-bottom: 2px solid #2a9aca;
+  }
+  
+  .para2 {
+    margin: 20px auto;
+  }
+  .job-edu-block {
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section h2 {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  #menuVertical ul li{
+    display: block;
+  }
+
+  #menuVertical ul li ul{
+    position:absolute;
+    top:0px;
+    left:100%;
+    /* display:none; */
+    width:auto;
+    z-index: 10;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .header_content {
+    display: block;
+    text-align: center;
+  }
+
+  .container {
+    display: block;
+    margin: 0 auto;
+  }
+ 
+body {
+  width: 100%;
+}
+
+  .info-container {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid #2a9aca;
+    border-bottom: 2px solid #2a9aca;
+  }
+
+  .para2 {
+    margin: 20px auto;
+  }
+  
+.job-edu-block {
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+section h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+}
