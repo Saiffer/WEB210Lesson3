@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x:hidden;
+  
 }
 
 a {
@@ -21,6 +21,7 @@ a {
 body {
   background-color: #FFFFFF;
   font-family: 'Lato', sans-serif;
+  overflow-x:hidden;
 }
 
 header {
